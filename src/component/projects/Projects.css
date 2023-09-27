@@ -88,11 +88,10 @@
 /* ## Card ## */
 
 .project-container {
-    width: var(--container-width-sm);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
-    width: var(--container-width-md);
+    width: var(--container-width-sm);
 }
 
 .project-item {
@@ -118,6 +117,7 @@
     overflow: hidden;
     opacity: 1;
     transition: 0.4s ease-in;
+    margin: 0 auto;
 }
 
 .project-img:hover {
@@ -143,34 +143,12 @@
     color: var(--color-light);
 }
 
-/* @media (max-width: 1430px) and (min-width: 870px) {
-    .project-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.1rem;
-    }
-} */
-
-/* @media (max-width: 1004px) {
-    .project-container {
-        grid-template-columns: 1fr;
-        gap: 1.1rem;
-    }
-
-    .project-item {
-        margin-top: 10px;
-        align-items: center;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-} */
-
 @media screen and (max-width: 600px) {
     .project-container {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
+        padding: 0 5%;
     }
 
     .project-item {
@@ -189,7 +167,7 @@
         width: 100%;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-        margin: 2px;
+        padding: 0 9%;
     }
 
     .project-item {
@@ -202,6 +180,7 @@
         height: auto;
     }
 }
+
 
 /* Details */
 .logo-details {
